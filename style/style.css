@@ -1,7 +1,6 @@
 body {
 	margin:0px;
 	padding:0px;
-
 }
 /*///////////////////////MENU NAVIGATION//////////////////////*/
 
@@ -20,19 +19,18 @@ body {
 }
 
 #menu ul li{
-	margin-right: 8px;
+	margin-right: 10px;
 }
 .menu {
 	color: black;
-	text-decoration: none;
 	line-height: 55px;
 }
 
 #logo {
-	margin-left:-50px;
+	margin-left:-45px;
 }
 
-#menuderoulant{
+#menuDeroulant{
 	color: #727C8E;
 	line-height: 55px;
 }
@@ -41,18 +39,21 @@ body {
 }
 #menu ul li:hover ul {
 	display: block;
+	width: 30%;
 	background-color: white;
 	border:1px solid black;
 	border-radius: 5px;
-	text-decoration: none;
-	padding: 10px 100px 10px 10px;
-	font-size: 0.90em;
-	line-height: 30px;
+	padding: 10px 95px 10px 15px;
+	font-size: 1em;
+	line-height: 35px;
 }
 #menu ul ul li a{
-	color: black;
+	color: #202528;
 }
 
+#menudroite {
+	margin-left: 31em;
+}
 #boutonmenu {
 	display: flex;
 	border: solid 1px black;
@@ -60,7 +61,6 @@ body {
 	border-radius: 5px;
 	margin-top: 12px;
 	background: white;
-
 }
 
 #boutonmenuG {
@@ -86,20 +86,21 @@ body {
 header {
 	display: block;
 	padding-top: 100px;
-	text-align: center;
 	background-color: #E9EDF2;
 }
 
 h1{
-	font-size: 2.3em;
+	font-size: 2.6em;
 	font-family: "Helvetica Neue",Arial,sans-serif;
+	font-weight: 100;
+	text-align: center;
 	color: #202528;
 	padding-bottom: 10px;
 }
 
 #section1 {
 	background: #E9EDF2;
-	margin-top: -25px;
+	margin-top: -30px;
 	padding-top: 50px;
 }
 
@@ -113,9 +114,8 @@ h1{
 	font-family: "Helvetica Neue",Arial,sans-serif;
 	text-align: center;
 	border-right: 1px solid #1c1b1b;
-
-
 }
+
 #contenu1 article h4 {
 	font-size:1.3em;
 	color: white;
@@ -123,6 +123,14 @@ h1{
 #contenu1 article p {
 	font-size:1em;
 	color: #B2B5BB;
+}
+
+#contenu1 article:hover {
+	background-color: #3b414f;
+}
+
+#contenu1 article:hover p {
+	color: white;
 }
 
 .textActive {
@@ -152,21 +160,36 @@ h1{
 #captureEcran {
 	display: block;
 	width: 65%;
+	margin-top: 60px;
 	margin-right: auto;
 	margin-left: auto;
 }
 
 /*//////////////////////////BOUTONS////////////////////////////////*/
 
+#bouton30days {
+	color:white;
+  	border-radius: 7px;
+  	font-family: "Helvetica Neue",Arial,sans-serif;
+  	font-size: 1.3em;
+  	font-weight: 600;
+  	background: #3F9BF8;
+  	padding: 15px 30px 15px 30px;
+  	border: solid #000000 1px;
+}
+
+#bouton30days:hover {
+	background: #3093f7;
+}
+
 .boutons {
   color:white;
   border-radius: 7px;
   font-family: "Helvetica Neue",Arial,sans-serif;
-  font-size: 20px;
+  font-size: 1em;
   background: #3F9BF8;
-  padding: 5px 20px 5px 20px;
+  padding: 8px 20px 8px 20px;
   border: solid #000000 1px;
-  
 }
 
 .boutons:hover {
@@ -186,6 +209,7 @@ a {
 
 h2 {
 	font-size: 2.2em;
+	font-weight: 100;
 	font-family: "Helvetica Neue",Arial,sans-serif;
 	text-align: center;
 	margin-bottom: -18px;
@@ -246,6 +270,7 @@ width: 45%;
 #section3 {
 	background-color: #E9EDF2;
 	padding-top: 50px;
+	margin-bottom: 80px;
 	color: #202528;
 }
 
@@ -263,3 +288,66 @@ width: 45%;
 }
 
 /*//////////////QUATRIEME SECTION (formulaire)////////////////////////*/
+
+#texteSection4 {
+	font-size: 1.1em;
+	font-family: Georgia, serif;
+	line-height: 1.5em;
+	text-align: center;
+	width:40%;
+	margin-right: auto;
+	margin-left: auto;
+	color: #202528;
+	margin-top: -20px;
+}
+
+#formulaire {
+	background-color: #E9EDF2;
+	border: 1px solid #929090;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 35px 30px 20px 30px;
+	font-family: "Helvetica Neue",Arial,sans-serif;
+	font-weight: 800;
+	color: #202528;
+	line-height: 1.8em;
+}
+
+#formulaire input {
+	margin-bottom: 20px;
+	font-size: 1em;
+	padding: 10px 5px 10px 5px;
+}
+
+#boutonSection4 {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#derformtexte {
+	text-align: center;
+	font-weight: 100;
+	margin-top: -2px;
+}
+
+#dataSection4{
+	font-size: 0.95em;
+	font-family: "Helvetica Neue",Arial,sans-serif;
+	color: #727C8E;
+	text-align: center;
+	margin-top: 30px;
+}
+
+#lienFinSection4 {
+	display: block;
+	text-align: center;
+	font-size: 0.95em;
+	font-family: "Helvetica Neue",Arial,sans-serif;
+	text-decoration: underline;
+	color: #727C8E;
+	margin-top: -10px;
+}

@@ -11,7 +11,7 @@
 			<li><img src="image/logo.png" alt="logo activecollab" id="logo"/></li>
 			<li><a href="https://activecollab.com/features" class="menu">Features</a></li>
 			<li><a href="https://activecollab.com/pricing" class="menu">Pricing</a></li>
-			<li><a href="#" id="menuderoulant">More+</a>
+			<li><a href="#" id="menuDeroulant">More+</a>
 				<ul>
 					<li><a href="">Add-Ons</a></li>
 					<li><a href="">Feature Roadmap</a></li>
@@ -38,29 +38,37 @@
 	</header>
 	<section id="section1">
 		<div id="contenu1">
-			<article>
-				<img src="image/icone1.png" alt="icone liste" />
-				<h4>Task Management</h4>
-				<p>Stay organized with an advanced to-do list and track your project.</p>
-			</article>
-			<article>
-				<img src="image/icone2.png" alt="icone bulle" />
-				<h4>Team Collaboration</h4>
-				<p>Efficiently work together with your team to deliver top-notch-results.</p>
-			</article>
-			<article>
-				<img src="image/icone3.png" alt="icone temps" />
-				<h4>Time Tracking</h4>
-				<p>Track every minute of your work and bill clients accordingly.</p>
-			</article>
-			<article>
-				<img src="image/icone4.png" alt="icone liste" />
-				<h4>Invoicing</h4>
-				<p>Easily issue invoices for your work, save time, and get paid.</p>
-			</article>
+			<a href="">
+				<article>
+					<img src="image/icone1.png" alt="icone liste" />
+					<h4>Task Management</h4>
+					<p>Stay organized with an advanced to-do list and track your project.</p>
+				</article>
+			</a>
+			<a href="">
+				<article>
+					<img src="image/icone2.png" alt="icone bulle" />
+					<h4>Team Collaboration</h4>
+					<p>Efficiently work together with your team to deliver top-notch-results.</p>
+				</article>
+			</a>
+			<a href="">
+				<article>
+					<img src="image/icone3.png" alt="icone temps" />
+					<h4>Time Tracking</h4>
+					<p>Track every minute of your work and bill clients accordingly.</p>
+				</article>
+			</a>
+			<a href="">
+				<article>
+					<img src="image/icone4.png" alt="icone liste" />
+					<h4>Invoicing</h4>
+					<p>Easily issue invoices for your work, save time, and get paid.</p>
+				</article>
+			</a>
 		</div>
 		<p class="textActive">Active Collab helps your team stay organized when you outgrow email. But it’s so much more than that — with plenty of neat add-ons, it’s a one-stop solution for all your business needs.</p>
-		<p id="boutontry"><a href="" class="boutons">Try it free for 30 days</a></p>
+		<p id="boutontry"><a href="" id="bouton30days">Try it free for 30 days!</a></p>
 		<p id="credit">No credit card required, unsubscribe at any time.</p>
 		<img src="image/capture.png" alt="capture d'écran" id="captureEcran"/>
 	</section>
@@ -93,18 +101,18 @@
 		<p>For more than 8 years, we've been trusted by over 200,000 people in companies ranging from small businesses to Fortune 500 members, universities and government institutions.</p>
 		<img src="image/partenaires.png" alt="logos des entreprises partenaires" />
 	</section>
-	<section>
+	<section id="section4">
 		<h1>Get started with Active Collab</h1>
-		<p>Enter your details to get a month of Active Collab absolutely free, without any limitations.</p>
-		<form method="post" action="traitement.php">
-			<label for="nom">Your Name or Organization</label><input type="text" name="nom" id="nom" />
-			<label for="email">Email</label><input type="email" name="email" id="email" />
-			<label for="pass">Password</label><input type="Password" name="pass" id="pass" />
-    		<p><a href="" class="boutons">Start my free month!</a>
-			<p>Hope you'll enjoy it!</p>
+		<p id="texteSection4">Enter your details to get a month of Active Collab absolutely free, without any limitations.</p>
+		<form method="post" action="traitement.php" id="formulaire">
+			<label for="nom">Your Name or Organization</label><input type="text" name="nom" id="nom" placeholder="Enter name or organization"/>
+			<label for="email">Email</label><input type="email" name="email" id="email" placeholder="name@organization.com"/>
+			<label for="pass">Password</label><input type="Password" name="pass" id="pass" placeholder="The longer, the stronger" />
+    		<p id="boutonSection4"><a href="" class="boutons">Start my free month!</a></p>
+			<p id="derformtexte">Hope you'll enjoy it!</p>
 		</form>
-		<p>Your data is safe with us.</p>
-		<a href="">Active Collab security</a>
+		<p id="dataSection4">Your data is safe with us.</p>
+		<a href="" id="lienFinSection4">Active Collab security</a>
 	</section>
 	<footer>
 		<nav>
