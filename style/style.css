@@ -1,4 +1,17 @@
+body {
+	margin:0px;
+	padding:0px;
+}
+
+nav {
+	margin-top: -22px;
+	padding: 5px;
+	background-color: #E9EDF2;
+	position: fixed; 
+}
+
 ul {
+	display: flex;
 	list-style: none;
 }
 
