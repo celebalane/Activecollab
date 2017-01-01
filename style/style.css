@@ -351,3 +351,33 @@ width: 45%;
 	color: #727C8E;
 	margin-top: -10px;
 }
+
+/*////////////////////////FOOTER///////////////////////*/
+
+footer {
+	padding: 50px 170px 50px 170px;
+	margin-top: 80px;
+	background-color: #3F4655;
+	color: #727C8E;
+	font-family: "Helvetica Neue",Arial,sans-serif;
+	font-size: 1.1em;
+}
+
+#footerFlex {
+	display: flex;
+	justify-content: space-around;
+}
+
+h5 {
+	padding-left: 40px;
+}
+.footer {
+	list-style: none;
+	font-family: "Helvetica Neue",Arial,sans-serif;
+}
+
+.footer a {
+	color: white;
+	font-size: 0.8em;
+	line-height: 30px;
+}
