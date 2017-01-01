@@ -128,6 +128,7 @@ h1{
 .textActive {
 	font-size: 1.3em;
 	font-family: Georgia, serif;
+	line-height: 1.7em;
 	text-align: center;
 	color: #202528;
 	width: 60%;
@@ -163,18 +164,102 @@ h1{
   font-family: "Helvetica Neue",Arial,sans-serif;
   font-size: 20px;
   background: #3F9BF8;
-  padding: 10px 20px 10px 20px;
+  padding: 5px 20px 5px 20px;
   border: solid #000000 1px;
   
 }
 
 .boutons:hover {
   background: #3093f7;
-  }
-
-/*///////////////////SECONDE SECTION (fond blanc)//////////////////*/
-
+}
 
 a {
 	text-decoration: none;
 }
+
+/*///////////////////SECONDE SECTION (fond blanc)//////////////////*/
+
+#section2 {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+h2 {
+	font-size: 2.2em;
+	font-family: "Helvetica Neue",Arial,sans-serif;
+	text-align: center;
+	margin-bottom: -18px;
+}
+
+#contenu2 {
+	display: flex;
+}
+
+#article1Contenu2 {
+	border-right: 1px solid #c9c6c6;
+	margin-left: auto;
+	font-family: Georgia, serif;
+	text-align: center;
+	color: #202528;
+}
+
+#article1Contenu2 img {
+width: 45%;
+}
+#article1Contenu2 h3 {
+	font-size: 1.5em;
+	font-family: "Helvetica Neue",Arial,sans-serif;
+}
+
+#article1Contenu2 p {
+	line-height: 1.9em;
+	padding-bottom: 5px;
+}
+
+#article2Contenu2 {
+
+	margin-right: auto;
+	font-family: Georgia, serif;
+	text-align: center;
+	color: #202528;
+}
+
+#article2Contenu2 img {
+width: 45%;
+}
+#article2Contenu2 h3 {
+	font-size: 1.5em;
+	font-family: "Helvetica Neue",Arial,sans-serif;
+}
+
+#article2Contenu2 p {
+	line-height: 1.9em;
+	padding-bottom: 5px;
+}
+
+.italique {
+	font-style: italic;
+}
+
+/*//////////////////TROISIEME SECTION (fond gris)/////////////////////*/
+
+#section3 {
+	background-color: #E9EDF2;
+	padding-top: 50px;
+	color: #202528;
+}
+
+#section3 p {
+	width: 60%;
+	font-size: 1.3em;
+	line-height: 1.7em;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#section3 img {
+	margin-top: -20px;
+}
+
+/*//////////////QUATRIEME SECTION (formulaire)////////////////////////*/
