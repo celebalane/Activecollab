@@ -1,17 +1,19 @@
 body {
 	margin:0px;
 	padding:0px;
+	overflow-x: hidden; /*cache le soucis dela barre de défilement du bas*/
 }
 /*///////////////////////MENU NAVIGATION//////////////////////*/
 
 #menu {
 	margin-top: -22px;
-	background-color: #E9EDF2;
-	position: fixed;
-	height: 15%;
-	width: 100%;
 	padding-top: 10px;
+	background-color: #E9EDF2;
+	position: fixed; /*Le menu reste visible en scrollant*/
+	height: 15%;
+	width: 100%; /*La barre de menu ne prend pas, de base, toute la page*/
 }
+
 #menu ul {
 	display: flex;
 	list-style: none;
@@ -23,7 +25,7 @@ body {
 }
 .menu {
 	color: black;
-	line-height: 55px;
+	line-height: 55px; /*Interlignage*/
 }
 
 #logo {
@@ -35,11 +37,11 @@ body {
 	line-height: 55px;
 }
 #menu ul ul{
-	display:none;
+	display:none; /*cache le sous menu*/
 }
-#menu ul li:hover ul {
+#menu ul li:hover ul { /*affiche le sous menu lorsque la souris survol le lien*/
 	display: block;
-	width: 30%;
+	width: 30%; /*Taille du sous menu, pas besoin de toute la place*/
 	background-color: white;
 	border:1px solid black;
 	border-radius: 5px;
@@ -51,10 +53,10 @@ body {
 	color: #202528;
 }
 
-#menudroite {
+#menuDroite {
 	margin-left: 31em;
 }
-#boutonmenu {
+#boutonMenu { /*Bricolage du double bouton*/
 	display: flex;
 	border: solid 1px black;
 	height: 5%;
@@ -63,28 +65,27 @@ body {
 	background: white;
 }
 
-#boutonmenuG {
+#boutonMenuG {
  	background: #3F9BF8;
  	border-right: solid 1px black;
  	padding: 5px 20px 5px 20px;
 }
 
-#boutonmenuG a {
+#boutonMenuG a {
 	color: white;
 }
 
-#boutonmenuD {
+#boutonMenuD {
 	padding: 5px 10px 5px 10px;
 }
 
-#boutonmenuD a {
+#boutonMenuD a {
 	color: black;
 }
 
 /*////////////////////PREMIERE SECTION (fond gris)//////////////////*/
 
 header {
-	display: block;
 	padding-top: 100px;
 	background-color: #E9EDF2;
 }
@@ -92,7 +93,7 @@ header {
 h1{
 	font-size: 2.6em;
 	font-family: "Helvetica Neue",Arial,sans-serif;
-	font-weight: 100;
+	font-weight: 100; /*Change la graisse de la typo quand c'est possible*/
 	text-align: center;
 	color: #202528;
 	padding-bottom: 10px;
@@ -105,7 +106,7 @@ h1{
 }
 
 #contenu1 {
-	display: flex;
+	display: flex; /*Aligne les articles*/
 	background-color: #3f4655;
 	border: 1px solid #1c1b1b;
 }
@@ -139,7 +140,7 @@ h1{
 	line-height: 1.7em;
 	text-align: center;
 	color: #202528;
-	width: 60%;
+	width: 60%; /*Réduit la place prise par le texte*/
 	margin-top: 40px;
 	margin-right: auto;
 	margin-left: auto;
@@ -158,8 +159,8 @@ h1{
 }
 
 #captureEcran {
-	display: block;
-	width: 65%;
+	display: block; /*Img prend la valeur block et permet son centrage*/
+	width: 65%; /*Reduit la taille de l'image*/
 	margin-top: 60px;
 	margin-right: auto;
 	margin-left: auto;
@@ -197,7 +198,7 @@ h1{
 }
 
 a {
-	text-decoration: none;
+	text-decoration: none; /*Tout les liens de la page n'ont pas décoration*/
 }
 
 /*///////////////////SECONDE SECTION (fond blanc)//////////////////*/
@@ -216,19 +217,19 @@ h2 {
 }
 
 #contenu2 {
-	display: flex;
+	display: flex; /*Aligne les articles*/
 }
 
 #article1Contenu2 {
 	border-right: 1px solid #c9c6c6;
-	margin-left: auto;
+	margin-left: auto; /*Permet de centrer cet article*/
 	font-family: Georgia, serif;
 	text-align: center;
 	color: #202528;
 }
 
 #article1Contenu2 img {
-width: 45%;
+	width: 45%; /*Réduction de la taille de l'image*/
 }
 #article1Contenu2 h3 {
 	font-size: 1.5em;
@@ -242,14 +243,14 @@ width: 45%;
 
 #article2Contenu2 {
 
-	margin-right: auto;
+	margin-right: auto; /*Permet de centrer cet article*/
 	font-family: Georgia, serif;
 	text-align: center;
 	color: #202528;
 }
 
 #article2Contenu2 img {
-width: 45%;
+	width: 45%;
 }
 #article2Contenu2 h3 {
 	font-size: 1.5em;
@@ -275,7 +276,7 @@ width: 45%;
 }
 
 #section3 p {
-	width: 60%;
+	width: 60%; /*Réduit la place prise par le texte*/
 	font-size: 1.3em;
 	line-height: 1.7em;
 	text-align: center;
@@ -305,10 +306,10 @@ width: 45%;
 	background-color: #E9EDF2;
 	border: 1px solid #929090;
 	border-radius: 5px;
-	display: flex;
+	display: flex; /*Meilleur disposition des items du formulaire*/
 	flex-direction: column;
-	width: 30%;
-	margin-right: auto;
+	width: 30%; /*Taille prise par le formulaire*/
+	margin-right: auto; /*Centrage du formulaire*/
 	margin-left: auto;
 	padding: 35px 30px 20px 30px;
 	font-family: "Helvetica Neue",Arial,sans-serif;
@@ -317,7 +318,7 @@ width: 45%;
 	line-height: 1.8em;
 }
 
-#formulaire input {
+#formulaire input { /*Change l'aspect des champs du formulaire*/
 	margin-bottom: 20px;
 	font-size: 1em;
 	padding: 10px 5px 10px 5px;
@@ -343,7 +344,7 @@ width: 45%;
 }
 
 #lienFinSection4 {
-	display: block;
+	display: block; /*Le lien prend la valeur de block pour pouvoir le placer plus facilement*/
 	text-align: center;
 	font-size: 0.95em;
 	font-family: "Helvetica Neue",Arial,sans-serif;
@@ -364,7 +365,7 @@ footer {
 }
 
 #footerFlex {
-	display: flex;
+	display: flex; /*Alignement des divers menu*/
 	justify-content: space-around;
 }
 
@@ -384,7 +385,7 @@ h5 {
 }
 
 #reseaux {
-	display: flex;
+	display: flex; /*Alignement des images*/
 	justify-content: center;
 }
 
