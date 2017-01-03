@@ -112,6 +112,7 @@ h1{
 }
 #contenu1 article {
 	padding: 30px;
+	height:83%;
 	font-family: "Helvetica Neue",Arial,sans-serif;
 	text-align: center;
 	border-right: 1px solid #1c1b1b;
@@ -132,6 +133,34 @@ h1{
 
 #contenu1 article:hover p {
 	color: white;
+}
+
+#icone1 {
+	margin-top: 20px;
+}
+#h4Icone1{
+	margin-top: 30px;
+}
+
+#icone2 {
+	margin-top: 20px;
+}
+
+#h4Icone2{
+	margin-top: 45px;
+}
+
+#pIcone2 {
+	width:90%;
+	padding-left: 10px;
+}
+#icone4 {
+	margin-top: 20px;
+	width: 50%;
+}
+
+#h4Icone4{
+	margin-top: 22px;
 }
 
 .textActive {
