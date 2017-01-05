@@ -17,7 +17,15 @@
 <!--Quart-->
 <path fill="#98E296" d="M52,72.25c0,0-0.75-2.917,2.25-8.5C56.104,60.299,60,57.5,60,57.5l16.75,19L52,72.25z"/>
 <!--Aiguille-->
-<line fill="none" stroke="#000000" x1="62.25" y1="60.25" x2="75.75" y2="75.5"/>
+<line id="aiguille" fill="none" stroke="#000000" x1="62.25" y1="60.25" x2="75.75" y2="75.5"/>
+<style>
+#aiguille {
+  transform-origin: 193px 164px;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation: rotate 4s cubic-bezier(.49,.05,.32,1.04) infinite alternate;
+  animation: rotate 4s cubic-bezier(.49,.05,.32,1.04) infinite alternate;
+}
+</style>
 <!--Petite aiguille-->
 <line fill="none" stroke="#000000" x1="84.5" y1="92.25" x2="89" y2="89.25"/>
 <!--Deco montre-->
