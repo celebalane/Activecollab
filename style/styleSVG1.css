@@ -1,3 +1,19 @@
-.rond:hover {
-	fill:black;
+.svg1:hover .cercle {
+	animation-name: animationCercleDeco;
+	animation-duration: 1s;
+	animation-iteration-count: 2;
+}
+
+@-webkit-keyframes animationCercleDeco {
+0% {
+ 	transform: scale(1);
+ 	transform-origin: 50% 50%;
+}
+50% {
+	 transform: scale(1.3);
+	 transform-origin: 50% 50%;
+}
+100% {
+	transform: scale(1);
+	transform-origin: 50% 50%;
 }
