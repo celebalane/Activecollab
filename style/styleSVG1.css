@@ -1,19 +1,78 @@
-.svg1:hover .cercle {
-	animation-name: animationCercleDeco;
+.svg1:hover .cercle {                     /*Animation des cercles en déco lors du passage de la souris*/
+	animation-name: animationCercleDeco;  /*Nom animation spécifique aux cercles*/
+	animation-duration: 1s;               /*Durée de l'animation*/
+	animation-iteration-count: 2;         /*Nombre de répétition de l'animation au passage de la souris*/
+}
+
+@-webkit-keyframes animationCercleDeco {  /*Animation en elle même à l'aide de clé d'animation*/
+0% {                                      /*Etat au temps 0 de l'animation*/
+ 	transform: scale(1);                  /*L'objet est à sa taille normale*/
+ 	transform-origin: 50% 50%;            /*Point d'origine de la transformation et donc au centre du cercle*/
+}
+50% {                                     /*Etat a mi-temps de l'animation*/
+	 transform: scale(1.3);               /*L'objet s'agrandit en partant du centre*/
+	 transform-origin: 50% 50%;
+}
+100% {                                    /*Etat à la fin de l'animation de l'objet*/
+	transform: scale(1);                  /*Revient à sa taille initiale*/
+	transform-origin: 50% 50%;
+}
+}
+
+.encocheCercle {                          /*Les encoches n'apparaissent pas sur l'image*/
+	visibility: hidden;
+
+}
+
+.svg1:hover .encocheCercle {              /*Apparition des encoches et de leur animation lors du survol de la souris*/
+	visibility: visible;
+	animation-name: animationEncocheDeco;
 	animation-duration: 1s;
 	animation-iteration-count: 2;
 }
 
-@-webkit-keyframes animationCercleDeco {
-0% {
- 	transform: scale(1);
- 	transform-origin: 50% 50%;
+@-webkit-keyframes animationEncocheDeco { /*Animation des encoches de la déco*/
+
+0%{
+	transform: scale(1);
+ 	transform-origin: 10% 100%;
 }
 50% {
 	 transform: scale(1.3);
-	 transform-origin: 50% 50%;
+	 transform-origin: 10% 100%;
 }
-100% {
+
+100%{
 	transform: scale(1);
-	transform-origin: 50% 50%;
+ 	transform-origin: 10% 100%;
 }
+}
+
+#encocheVerte1 {                         /*Les encoches vertes sont cachées temps qu'elles ne sont pas animées*/
+	visibility: hidden;
+}
+
+#encocheVerte2 {
+	visibility: hidden;
+}
+
+.svg1:hover #encocheVerte1 {             /*Visibles lors d'un survol par la souris*/
+	visibility: visible;
+	
+}
+
+.svg1:hover #encocheVerte2 {
+	visibility: visible;
+	transition-delay: 95ms;              /*Durée entre le survol et l'affichage de l'encoche pour créer un décalage entre la première et 
+	                                     la seconde encoche*/
+	}
+
+.svg1:hover #rond1 {                     /*Les ronds laissent place aux encoches*/
+	visibility: hidden;
+}
+
+.svg1:hover #rond2 {
+	visibility: hidden;
+	transition-delay: 95ms;
+}
+
