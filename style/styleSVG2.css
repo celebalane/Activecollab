@@ -1,0 +1,116 @@
+.svg2:hover .tiretDroit {                          /*Animation au survol des tirets vers la droite*/
+	animation-name: tiretDroite;
+	animation-duration: 2s;                        /*vitesse à laquelle les tirets vont bouger*/
+}
+
+@keyframes tiretDroite {                           /*Animation des tirets*/
+0% {
+	transform: translateX(0%);                     /*Passe de sa position initial à un point fixé plus loin*/
+}
+100% {
+	transform: translateX(805%);
+}
+}
+.svg2:hover .tiretGauche {                         /*Animation au survol des tirets vers la gauche*/
+	animation-name: tiretGauche;
+	animation-duration: 2s;
+}
+
+@keyframes tiretGauche {
+0% {
+	transform: translateX(0%);
+}
+100% {
+	transform: translateX(-800%);
+}
+}
+
+.svg2:hover #ouvert {                             /*disparition de l'oeil pour le clin d'oeil*/
+	visibility: hidden;
+}
+
+#fermer {
+	visibility: hidden;                           /*L'oeil fermé est caché de base*/
+}
+
+.svg2:hover #fermer {                             /*Apparition de l'oeil fermé*/
+	visibility: visible;
+}
+
+.svg2:hover #bulle3 {                             /*Animation en cascade des petits ronds dans la bulle de droite. Problème ne marche qu'une fois*/
+	animation-name: animationBulle3;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+}
+
+@-webkit-keyframes animationBulle3 { 
+
+0%{
+	transform: scale(0);
+ 	transform-origin: 50% 50%;
+}
+
+25%{
+	transform: scale(1);
+ 	transform-origin: 50% 50%;
+}
+
+100%{
+	transform: scale(1);
+ 	transform-origin: 50% 50%;
+}
+}
+
+.svg2:hover #bulle2 {
+	animation-name: animationBulle2;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-delay: 1s;
+	
+}
+
+@-webkit-keyframes animationBulle2 { 
+
+0%{
+	
+	transform: scale(0);
+ 	transform-origin: 50% 50%;
+ }
+
+ 25%{
+	transform: scale(1);
+ 	transform-origin: 50% 50%;
+}
+
+100%{
+	transform: scale(1);
+ 	transform-origin: 50% 50%;
+}
+}
+
+.svg2:hover #bulle1 {
+	animation-name: animationBulle1;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-delay: 2s;
+	
+}
+
+@-webkit-keyframes animationBulle1 { 
+
+0%{
+	
+	transform: scale(0);
+ 	transform-origin: 50% 50%;
+ }
+
+25%{
+	transform: scale(1);
+ 	transform-origin: 50% 50%;
+}
+
+100%{
+	transform: scale(1);
+ 	transform-origin: 50% 50%;
+}
+}
